@@ -1,0 +1,54 @@
+author			= "GlobalGurke";
+onLoadName		= "Script Testing";
+onLoadMission	= "Test";
+loadScreen		= "images\loadScreen.paa";
+
+class cfgFunctions {
+    #include "functions\cfgfunctions.hpp"
+	//#include "modules\grad-persistence\cfgFunctions.hpp"
+};
+
+
+class Header
+{
+	gameType = "Coop";	// Game type
+	minPlayers =  1;	// minimum number of players the mission supports
+	maxPlayers = 5;	// maximum number of players the mission supports
+	disabledAI = 1; 
+};
+
+class CfgGradPersistence {
+    missionTag = "persistence_test_24_3";
+    loadOnMissionStart = 1;
+    missionWaitCondition = "true";
+    playerWaitCondition = "true";
+
+    saveUnits = 1;
+    saveVehicles = 2;
+    saveContainers = 3;
+    saveStatics = 2;
+    saveGradFortificationsStatics = 3;
+    saveMarkers = 0;
+    saveTasks = 0;
+    saveTriggers = 0;
+
+    savePlayerInventory = 1;
+    savePlayerDamage = 1;
+    savePlayerPosition = 1;
+    savePlayerMoney = 0;
+
+    saveTeamAccounts = 0;
+
+    blacklist[] = {
+    };
+};
+
+class CfgSounds
+{
+	class click_sl
+	{
+		name = "click_sl";
+		sound[] = {"\sound\click_sl.ogg", 1, 1};
+		titles[] = {1, ""};
+	};
+};

@@ -1,0 +1,1 @@
+[[1, 1, 2, 0, 0, 0, false], 'RCOP\RCOPersist\RCOPcreateFiller.sqf'] remoteExec ['execVM', 0]; 
