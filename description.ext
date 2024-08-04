@@ -4,6 +4,7 @@ onLoadMission	= "Test";
 loadScreen		= "images\loadScreen.paa";
 
 class cfgFunctions {
+    #include "helilight\cfgFunctions.hpp"
     #include "functions\cfgfunctions.hpp"
 	//#include "modules\grad-persistence\cfgFunctions.hpp"
 };

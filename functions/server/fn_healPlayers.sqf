@@ -1,3 +1,17 @@
+/*
+	Author: GlobalGurke
+
+	Description:
+		Heal players around a trigger Area
+
+	Parameter(s):
+			<object> - trigger, get with thisTrigger in init field of Trigger
+	Returns:
+		nothing
+
+	Examples:
+		[thisTrigger] call SERVER_fnc_healPlayers;
+*/
 params ["_trigger"];
 _playersInArea = allplayers select {_x inArea _trigger}; 
 {
