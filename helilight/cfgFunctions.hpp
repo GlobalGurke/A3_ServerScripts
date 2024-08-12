@@ -4,7 +4,8 @@ class CLIENT
     class client
     {
         file = "helilight\functions";
-        class createLightLocal {};
+        class createLight {};
+        class toggleLight {};
     };
 
 };
